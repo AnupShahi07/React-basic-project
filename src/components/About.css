@@ -1,6 +1,5 @@
 .back {
-  background-color: rgb(25, 24, 30);
-
+  background: linear-gradient(135deg, #27a6fa 0%, #fe6060 100%);
 }
 
 .about-section {
@@ -21,14 +20,13 @@
   text-align: center;
   max-width: 600px;
   margin: 0 auto 30px;
-  min-height:  50vh;
+  min-height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:large;
+  font-size: large;
 }
-
 
 @media (max-width: 480px) {
   .about-section {
