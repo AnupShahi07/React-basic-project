@@ -17,11 +17,11 @@
   background-color: #1f8fb456;
   border-radius: 12px;
 }
-h2 {
+.heading{
   color: aquamarine;
   font-style: italic;
 }
-h3 {
+.result-area {
   color: aliceblue;
 }
 .input {
@@ -70,7 +70,7 @@ h3 {
     text-align: center;
   }
 
-  h3 {
+  .result-area {
     font-size: 1.1rem;
   }
 
