@@ -2,38 +2,54 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer
-      style={{
-        textAlign: "center",
-        padding: "16px 0",
-        width: "100%",
-        fontSize: "16px",
-        color: "white",
-        backgroundColor: "rgb(41, 41, 42)",
-      }}
-    >
-      <p>© 2025 All rights reserved.</p>
-      <p>
+    <footer style={styles.footer}>
+      <p style={styles.text}>© 2025 Anup Shahi. All rights reserved.</p>
+
+      <div style={styles.links}>
         <a
-          href=" https://github.com/AnupShahi07"
+          href="https://github.com/AnupShahi07"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#2980b9", marginLeft: "5px" }}
+          style={styles.link}
         >
-          GitHub link
+          <i className="fa-brands fa-github"></i>
         </a>
-         or
+
         <a
           href="https://www.linkedin.com/in/anupshahi07"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#2980b9", marginLeft: "5px" }}
+          style={styles.link}
         >
-          LinkedIn link
+          <i className="fa-brands fa-linkedin"></i>
         </a>
-      </p>
+      </div>
     </footer>
   );
 }
+
+const styles = {
+  footer: {
+    backgroundColor: "rgb(41, 41, 42)",
+    color: "white",
+    padding: "5px 0",
+    textAlign: "center",
+  },
+  text: {
+    color: "yellow",
+    marginBottom: "10px",
+    fontSize: "14px",
+  },
+  links: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px",
+  },
+  link: {
+    color: "#2980b9",
+    fontSize: "22px",
+    textDecoration: "none",
+  },
+};
 
 export default Footer;

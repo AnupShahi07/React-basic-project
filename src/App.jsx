@@ -5,7 +5,7 @@ import Home from './components/Home.jsx';
 import Nav from './components/Nav.jsx';
 import Photos from './components/Photos.jsx';
 import Footer from './components/Footer.jsx';
-import Contact from './components/Contact.jsx';
+import Fun from './components/Fun.jsx';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About />}/>
         <Route path='/photos' element={<Photos/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/fun' element={<Fun/>}/>
       </Routes>
       <Footer />
     </div>

@@ -1,20 +1,30 @@
 import React from "react";
 import "./About.css";
-function About() {
-    return (
-        <div className="back">
-            <div className="about-section">
-                <h1 className="about-title">About me!</h1>
 
-                <p className="about-text">
-                    A BCA graduate Student and a Fresher. and I enjoy building some websites.<br />
-                    For this project I have used some public APIs to fetch verified and real-time currency rates data, crypto price rate data and a free Images APIs.
-                    <br />
-                    The technology that I used: React+Vite, basic HTML, CSS and JavaScript with some Public APIs.
-                </p>
-            </div>
-        </div>
-    )
+function About() {
+  return (
+    <div className="back">
+      <div className="about-section">
+        <h1 className="about-title">About Me</h1>
+
+        <p className="about-text">
+          I am a BCA graduate and a fresher with an interest in web development.
+          I enjoy building simple, useful, and user-friendly web applications.
+        </p>
+
+        <p className="about-text">
+          This project is built using modern frontend tools and works with
+          real-world data. It uses public APIs to fetch real-time currency rates,
+          cryptocurrency prices, and free images.
+        </p>
+
+        <p className="about-text">
+          <strong>Technologies used:</strong> React with Vite, HTML, CSS,
+          JavaScript, and public APIs.
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default About;
