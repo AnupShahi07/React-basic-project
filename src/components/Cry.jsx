@@ -25,7 +25,7 @@ function Cry() {
 
     useEffect(() => {
         cryptoPrice();
-        const interval = setInterval(cryptoPrice, 40000);
+        const interval = setInterval(cryptoPrice, 60000); // refresh in 60 seconds
         return () => clearInterval(interval);
     }, []);
 
@@ -35,32 +35,26 @@ function Cry() {
                 <table id='tb'>
                     <thead>
                         <tr>
-                            <th>
-                                coin
-                            </th>
-                            <th>
-                                Current Price
-                            </th>
-                            <th>
-                                24th change
-                            </th>
+                            <th>coin</th>
+                            <th>Current Price</th>
+                            <th>24th change</th>
                         </tr>
                     </thead>
 
                     <tbody >
-                        {loading ? (
+                        {loading && (
                             <tr>
-                                <td>
-                                    Loading prices...
-                                </td>
+                                <td>Loading prices...</td>
                             </tr>
-                        ) : error ? (
+                        )}
+                        
+                        {!loading && error && (
                             <tr>
-                                <td>
-                                    {error}
-                                </td>
+                                <td>{error}</td>
                             </tr>
-                        ) : (
+                        )}
+                        
+                        {!loading && !error &&
                             coins.map((coin) => (
                                 <tr key={coin.id}>
                                     <td id='info'>
@@ -70,12 +64,13 @@ function Cry() {
                                     <td style={{ padding: "8px" }}>
                                         {coin.current_price.toLocaleString()}
                                     </td>
+
                                     <td style={{ padding: "8px", color: coin.price_change_percentage_24h >= 0 ? "green" : "red", }}>
                                         {coin.price_change_percentage_24h.toFixed(2)}%
                                     </td>
                                 </tr>
                             ))
-                        )}
+                        }
                     </tbody>
                 </table>
             </div>  
