@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./home.css";
-import Cry from "./cry";
+import Cry from "./Cry.jsx";
 
 const CURRENCIES = ["INR", "USD", "EUR", "GBP", "JPY", "AUD", "CAD", "CNY"];
 
