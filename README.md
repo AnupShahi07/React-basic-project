@@ -1,32 +1,97 @@
-# React + Vite Based basic project.
-Currency Converter & Crypto price rate real-time updates.
+# 💱 React + Vite Basic Project
 
-**Deployed on netlify.**
-👉[click here to visit](https://vite-react-basic.netlify.app/)
+A simple React application that provides **real-time currency conversion**, **live cryptocurrency prices**, and **random photos** using public APIs.
 
-✨ Features.
-Real-Time Currency Conversion: Get up-to-the-minute exchange rates for various fiat currencies.
-
-Live Crypto Prices: Stay informed with the current prices of major cryptocurrencies.
-
-Dynamic Photos: Enjoy a new, random, high-quality photo with every conversion, powered by an external image API.
-
-Responsive Design: The app is optimized for a seamless experience on both desktop and mobile devices.
-
-Fast Development: Built with Vite for an incredibly fast and lightweight development environment.
+🌐 **Live Demo**
+👉 https://vite-react-basic.netlify.app/
 
 ---
 
+## ✨ Features
 
-🛠️Technologies Used.
-React: A JavaScript library for building user interfaces.
+* 💱 Real-Time Currency Conversion
+* 🪙 Live Cryptocurrency Prices
+* 🖼️ Random Photos from an External API
+* 📱 Responsive Design for Mobile & Desktop
+* ⚡ Fast Development with Vite
+* 🔄 Real-Time Data Updates
 
-Vite: A build tool that provides a lightning-fast development experience for modern web projects.
+---
 
-Public APIs:
+## 🛠️ Technologies Used
 
-CoinGecko API: Used to fetch the latest cryptocurrency prices.
+* **React** – For building the user interface
+* **Vite** – Fast build tool and development server
+* **JavaScript** – Application logic
+* **CSS** – Styling and responsive design
+* **Git & GitHub** – Version control
 
-frankfurter API: Used for real-time fiat currency exchange rates.
+---
 
-slingacademy API: Used to fetch random photos.
+## 🔌 Public APIs Used
+
+### 🪙 CoinGecko API
+
+Used to fetch live cryptocurrency prices.
+
+### 💱 ExchangeRate API
+
+Used for real-time currency exchange rates.
+
+### 🖼️ Sling Academy API
+
+Used to fetch random photos.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AnupShahi07/React-basic-project.git
+```
+
+Move to the project directory:
+
+```bash
+cd React-basic-project
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📸 Project Highlights
+
+✔ Real-Time Currency Converter
+
+✔ Live Crypto Market Prices
+
+✔ Dynamic Random Images
+
+✔ Responsive UI
+
+✔ React Hooks (`useState`, `useEffect`)
+
+✔ API Integration
+
+---
+
+## 👨‍💻 Author
+
+**Anup Shahi**
+
+GitHub: https://github.com/AnupShahi07
+
+⭐ If you like this project, consider giving it a star!
