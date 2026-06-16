@@ -44,31 +44,29 @@ Used to fetch random photos.
 
 ---
 
-## 🚀 Getting Started
+📝 Deployment Notes
 
-Clone the repository:
+This project was initially deployed using Netlify Drop (manual deployment).
 
-```bash
-git clone https://github.com/AnupShahi07/React-basic-project.git
-```
+After making changes:
 
-Move to the project directory:
+Build the project:
+npm run build
+A dist folder will be generated.
+Drag and drop the dist folder into Netlify to deploy the latest version.
+Using GitHub (Recommended)
 
-```bash
-cd React-basic-project
-```
+If Netlify is connected to GitHub:
 
-Install dependencies:
+git add .
+git commit -m "Update project"
+git push
 
-```bash
-npm install
-```
+Netlify will automatically build and deploy the latest version.
 
-Start the development server:
+Important
 
-```bash
-npm run dev
-```
+If your local project works but the live site does not, make sure the latest build has been deployed to Netlify. The live site may still be running an older deployment.
 
 ---
 
