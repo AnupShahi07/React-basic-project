@@ -1,90 +1,140 @@
 /* CurrencyConverter.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .full {
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between; /* pushes divs to extreme left and right */
-  align-items: flex-start; /* aligns at top */
-  padding: 50px; /* spacing inside parent */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
   background: linear-gradient(135deg, #27a6fa 0%, #fe6060 100%);
   flex-wrap: wrap;
 }
 
 .container {
-  max-width: 400px;
-  margin: 100px 0px 100px 270px; /* ⬅ increased top margin */
+  width: 100%;
+  max-width: 450px;
   text-align: center;
-  padding: 50px;
-  box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
-  background-color: #1f8fb456;
-  border-radius: 12px;
+  padding: 40px;
+  background: rgba(31, 143, 180, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(82, 88, 176, 0.8);
+  backdrop-filter: blur(10px);
 }
-.heading{
+
+.heading {
   color: aquamarine;
   font-style: italic;
+  margin-bottom: 25px;
 }
-.result-area {
-  color: aliceblue;
+
+.converter-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
 .input {
-  width: 100px;
-  padding: 5px;
-  margin-right: 10px;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
 }
 
 .select {
-  padding: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .to-text {
-  margin: 0 10px;
   color: wheat;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-/* ================= TABLET SCREENS ================= */
-@media (max-width: 1200px) {
-  .full {
-    padding: 30px;
-    justify-content: center; /* center items on medium screens */
-    gap: 30px;
-  }
+.result-area {
+  margin-top: 25px;
+  color: white;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
 
+.error {
+  color: #ffe6e6;
+}
+
+.result-area h3 {
+  line-height: 1.6;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
   .container {
-    margin: 50px auto;
-    padding: 40px;
+    max-width: 500px;
+    padding: 35px;
   }
 }
 
-/* ================= PHONES ================= */
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
   .full {
-    align-items: center;
-    padding: 40px;
+    padding: 20px;
   }
 
   .container {
-    max-width: 90%; /* use most of the screen width */
-    box-shadow: 0px 0px 40px 0px rgb(82, 88, 176);
+    width: 95%;
+    padding: 25px;
   }
 
-  h2 {
-    font-size: 1.2rem;
-    text-align: center;
+  .heading {
+    font-size: 1.5rem;
   }
 
-  .result-area {
-    font-size: 1.1rem;
+  .converter-row {
+    flex-direction: column;
   }
 
-  .input {
-    width: 80px;
-    margin: 10px;
-  }
-
+  .input,
   .select {
-    width: 100px;
+    width: 100%;
   }
 
   .to-text {
-    display: block; /* stack 'to' text below on very small screens */
-    margin: 10px 0;
+    margin: 5px 0;
+  }
+
+  .result-area {
+    font-size: 1rem;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .result-area {
+    font-size: 0.95rem;
   }
 }
